@@ -1,9 +1,10 @@
 import React from "react";
 import { CiBookmark, CiShare2 } from "react-icons/ci";
 import { FaStar, FaEye } from "react-icons/fa";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-  const { title, rating, total_view, author, image_url, details, tags } = news;
+  const {id, title, rating, total_view, author, image_url, details, tags } = news;
 
   const formattedDate = new Date(author.published_date).toLocaleDateString(
     "en-US",
@@ -37,7 +38,7 @@ const NewsCard = ({ news }) => {
       <div className="p-4 ">
         <img src={image_url} alt={title} className="w-full h-100 object-cover mb-5 rounded-xl" />
         <p className="text-gray-700 text-sm line-clamp-4">{details}</p>
-
+        <Link to={`/newsdetails/${id}`} className="font-semibold text-[16px] text-[#FF8C47]">Read More</Link>
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-3">
           {tags.map((tag) => (
