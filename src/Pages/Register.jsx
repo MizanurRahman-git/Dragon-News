@@ -1,23 +1,30 @@
 import React, { use } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
-
-    const {createUser,setUser} = use(AuthContext);
+    const navigate = useNavigate()
+    const {createUser,setUser, updatedUser} = use(AuthContext);
 
     const handleRegister = (event) => {
         event.preventDefault()
-        // const name = event.target.name?.value
-        // const photoURL = event.target.url?.value
+        const name = event.target.name?.value
+        const photoURL = event.target.url?.value
         const email = event.target.email?.value
         const password = event.target.password?.value
 
         createUser(email,password)
         .then(result => {
             const user = result.user
-            console.log(user)
-            setUser(user)
+            // console.log(user)
+            updatedUser({displayName: name , photoURL: photoURL})
+            .then(()=>{
+              setUser({...user,displayName: name , photoURL: photoURL})
+              navigate("/")
+            })
+            .catch(error => {
+              console.log(error)
+            })
         })
         .catch(error => {
             const errorMessage = error.message;
