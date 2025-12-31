@@ -1,16 +1,7 @@
-# React + Vite
+Dragon News — Trusted Source for Breaking Stories & In-Depth Reporting
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dragon News is a contemporary digital news platform delivering fast, accurate, and unbiased coverage of the latest headlines from around the country and across the globe. With a commitment to journalistic integrity and factual reporting, Dragon News brings readers closer to real-time events, insightful analysis, and meaningful perspectives that shape today’s world.
 
-Currently, two official plugins are available:
+From breaking news alerts to in-depth feature stories, Dragon News empowers readers to stay informed on politics, business, technology, lifestyle, sports, and culture — all in one place. Our editorial approach emphasizes verified information, responsible storytelling, and clarity, ensuring every published article maintains the highest professional standards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Designed with accessibility and user-experience in mind, Dragon News offers a clean and intuitive reading environment where audiences can explore trending topics, follow developing stories, and stay updated with daily news highlights. Whether you're catching up with major national events or discovering impactful local stories, Dragon News delivers news you can trust — anytime, anywhere.
